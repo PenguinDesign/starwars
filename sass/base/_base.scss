@@ -1,0 +1,33 @@
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+    /* this box sizing says that it will not include padding and margin to total dimensions of box */
+}
+/* basic reset, adds css to everything for every browser */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+
+    // @include respond(tab-land) {
+    //     font-size: 56.25%; //1rem = 9px
+    // }
+    // @include respond(tab-port) {
+    //     font-size: 50%; //1rem = 8px
+    // }   
+    // @include respond(big-desktop) {
+    //     font-size: 75%; //1rem = 12px
+    // }
+}
+
+body {
+    box-sizing: border-box;
+    /* changes the box model to make the content area the total border size, easier calculations */
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
